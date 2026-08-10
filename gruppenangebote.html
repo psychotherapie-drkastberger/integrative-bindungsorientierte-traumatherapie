@@ -37,7 +37,7 @@
     .method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}.method-card{padding:1.45rem;border:1px solid rgba(255,255,255,.15);border-radius:var(--radius);background:rgba(255,255,255,.08)}.method-num{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--peach);color:var(--clay2);font-weight:900;margin-bottom:.9rem}
     .facts{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2rem}.fact-card{padding:1.4rem;border-radius:var(--radius);background:#fff;border:1px solid rgba(24,63,58,.13)}.fact-card p{color:var(--muted);margin:.2rem 0}.fact-card strong{color:var(--forest)}
     .dates{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}.date-card{padding:1.4rem;border-radius:var(--radius);background:#fff;border:1px solid rgba(24,63,58,.13);display:flex;flex-direction:column;gap:.7rem}.date-card .when{font-family:Georgia,serif;color:var(--forest);font-size:1.15rem}.date-card .where{color:var(--muted);font-size:.9rem}.date-card .btn{margin-top:auto}
-    .gallery{display:grid;grid-template-columns:1.1fr .9fr;gap:1rem;margin-top:2.2rem}.gallery img{border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid rgba(24,63,58,.12);width:100%;height:100%;object-fit:cover}
+    .section-thumb{display:block;width:min(320px,80%);margin:1.2rem 0 1.4rem;cursor:zoom-in}.section-thumb img{width:100%;height:auto;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid rgba(24,63,58,.12)}.flyer{display:block;max-width:780px;margin:2.2rem auto 0;cursor:zoom-in}.flyer img{width:100%;height:auto;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid rgba(24,63,58,.12)}.zoom-hint{text-align:center;color:var(--muted);font-size:.85rem;margin:.6rem 0 0}.hero-banner{margin-top:2rem;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(24,63,58,.12);aspect-ratio:16/7}.hero-banner img{width:100%;height:100%;object-fit:cover;object-position:center 40%}.lightbox{position:fixed;inset:0;z-index:100;display:none;place-items:center;background:rgba(16,28,25,.88);padding:1.5rem;cursor:zoom-out}.lightbox.open{display:grid}.lightbox img{max-width:min(96vw,1200px);max-height:94vh;width:auto;height:auto;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
     .leaders{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-top:1.3rem}.leader-card{display:flex;gap:1rem;align-items:center;background:#fff;border:1px solid rgba(24,63,58,.13);border-radius:var(--radius);padding:1.1rem}.leader-card img{width:76px;height:76px;border-radius:50%;object-fit:cover;flex:0 0 auto;border:1px solid rgba(24,63,58,.14)}.leader-card h4{margin:0 0 .15rem;color:var(--forest);font-family:Georgia,"Times New Roman",serif;font-size:1.05rem}.leader-card p{margin:0;color:var(--muted);font-size:.86rem}
     .cta{display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;align-items:center;background:var(--forest);color:#fff;border-radius:32px;padding:clamp(1.5rem,4vw,3rem);box-shadow:var(--shadow)}.cta h2{color:#fff}.cta p{color:#dbe8e3}.contact{padding:1.25rem;border-radius:20px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.17)}.line{display:flex;gap:.7rem;margin:.65rem 0}.line a{color:#fff;font-weight:700}.line span{color:#dbe8e3;font-size:.88rem}
     .divider{border:0;border-top:1px solid var(--line);margin:0}
@@ -78,12 +78,12 @@
 <a class="skip" href="#inhalt">Zum Inhalt springen</a>
 <header aria-label="Seitennavigation">
   <div class="wrap nav">
-    <a class="brand" href="index.html" aria-label="Praxis Dr. Kastberger – Startseite">
+    <a class="brand" href="https://psychotherapie-drkastberger.at/" aria-label="Praxis Dr. Kastberger – Startseite">
       <span class="brand-mark" aria-hidden="true">♡</span>
       <span>Praxis Dr. Kastberger<small>Psychotherapie · Verhaltenstherapie · Salzburg</small></span>
     </a>
     <nav class="links" aria-label="Hauptnavigation">
-      <a href="index.html">Startseite</a><a href="#herzwurzeln">Herzwurzeln</a><a href="#elterngruppe">Elterngruppe</a>
+      <a href="https://psychotherapie-drkastberger.at/">Startseite</a><a href="#herzwurzeln">Herzwurzeln</a><a href="#elterngruppe">Elterngruppe</a>
       <a class="btn btn-primary" href="mailto:praxis@psychotherapie-drkastberger.at?subject=Anfrage%20Gruppenangebot">Anfrage per E-Mail</a>
     </nav>
   </div>
@@ -100,6 +100,9 @@
         <a class="btn btn-secondary" href="#elterngruppe">Eltern sein, ohne alte Muster</a>
       </div>
       <p class="micro">Vor jeder Teilnahme findet ein kurzes persönliches Vorgespräch statt, in dem wir gemeinsam klären, ob das jeweilige Gruppenformat aktuell zu Ihrem Anliegen passt.</p>
+      <div class="hero-banner">
+        <img src="assets/hero-elterngespraech.webp" width="1672" height="941" alt="Symbolbild für psychotherapeutische Gruppen: warmes Gespräch in geschütztem Rahmen – zwei Frauen im Austausch, eine davon mit Baby im Arm.">
+      </div>
     </div>
   </section>
 
@@ -107,13 +110,16 @@
     <div class="wrap">
       <span class="tag">Gruppenselbsterfahrung · ab 18 Jahren</span>
       <p class="kicker">Für Frauen und Männer, die ihre Beziehungsmuster verstehen möchten</p>
+      <a class="section-thumb" href="assets/herzwurzeln-flyer-1.webp" data-lightbox aria-label="Herzwurzeln-Bild in Großansicht öffnen">
+        <img src="assets/herzwurzeln-flyer-1.webp" width="1200" height="1200" loading="lazy" alt="Herzwurzeln – Ein Wochenende für deine Beziehungsmuster: symbolische Illustration von zwei Menschen auf einem gemeinsamen Weg sowie einer Gruppe in einer Sitzung.">
+      </a>
       <h2 id="herzwurzeln-title">Herzwurzeln – Beziehungs-Navi</h2>
       <p class="intro">Warum wiederholt sich in Beziehungen immer wieder dasselbe? Vielleicht geraten Sie an emotional nicht verfügbare Menschen, investieren viel und bekommen wenig zurück, ziehen sich bei echter Nähe zurück oder halten an Beziehungen fest, obwohl sie nicht guttun. Herzwurzeln ist ein geschütztes Wochenende für genau diese Muster: Das Beziehungs-Navi hilft, wiederkehrende Dynamiken nicht nur mit dem Kopf zu verstehen, sondern im unmittelbaren Erleben wahrzunehmen – als persönliche Selbsterfahrung in einer kleinen, vertrauensvollen Gruppe von maximal 6 Personen. Kein Frontalvortrag, keine Datingtipps.</p>
 
-      <div class="gallery">
+      <a class="flyer" href="assets/herzwurzeln-flyer-2.webp" data-lightbox aria-label="Herzwurzeln-Flyer in Großansicht öffnen">
         <img src="assets/herzwurzeln-flyer-2.webp" width="1055" height="1491" loading="lazy" alt="Herzwurzeln – Beziehungs-Navi: Flyer mit den Fragen „Warum wähle ich immer wieder die Falschen?“, was Sie erwartet und den Eckdaten Dauer, Gruppengröße, Ort und Beitrag.">
-        <img src="assets/herzwurzeln-flyer-1.webp" width="1200" height="1200" loading="lazy" alt="Herzwurzeln – Ein Wochenende für deine Beziehungsmuster: symbolische Illustration von zwei Menschen auf einem gemeinsamen Weg sowie einer Gruppe in einer Sitzung.">
-      </div>
+      </a>
+      <p class="zoom-hint">Zum Vergrößern auf den Flyer klicken</p>
 
       <h3 style="margin-top:2.4rem">Was ist Pesso? Der methodische Hintergrund</h3>
       <p class="intro">Die Gruppe basiert auf dem <strong>Pesso-Boyden System Psychomotor (PBSP)</strong>, einem körper- und erlebnisorientierten psychotherapeutischen Ansatz. Im Mittelpunkt stehen grundlegende menschliche Bedürfnisse nach Platz, Versorgung, Unterstützung, Schutz und Grenzen. Mithilfe von Körperwahrnehmung, räumlichen Positionen und klar vereinbarten symbolischen Rollen kann im Hier und Jetzt eine neue, stimmige Beziehungserfahrung gestaltet werden. Die Vergangenheit wird dabei nicht „umgeschrieben“ – es geht um Ihr heutiges Erleben und mehr innere Wahlmöglichkeiten für die Zukunft. Jede Person erhält einen eigenen geschützten Zeitraum für ihre persönliche Sequenz und bestimmt selbst, woran sie arbeiten möchte und wie tief sie geht. Körperliche Nähe oder Berührung ist keine Voraussetzung und erfolgt nicht ohne ausdrückliche Zustimmung.</p>
@@ -214,7 +220,7 @@
         </article>
         <article class="leader-card" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.16)">
           <img src="assets/leitung-sebastian-hertle.webp" width="900" height="1200" alt="Sebastian Hertle, BA">
-          <div><h4 style="color:#fff">Sebastian Hertle, BA</h4><p style="color:#d7e5e0">Co-Leitung</p></div>
+          <div><h4 style="color:#fff">Sebastian Hertle, BA</h4><p style="color:#d7e5e0">Co-Leitung · Psychotherapeut in Ausbildung unter Supervision (Verhaltenstherapie) · Sozialarbeiter in der Kinder- und Jugendhilfe · Traumatherapeut</p></div>
         </article>
       </div>
     </div>
@@ -240,10 +246,18 @@
 <footer>
   <div class="wrap foot">
     <div>© 2026 DI Dr. Birgit Kastberger · Psychotherapeutin (Verhaltenstherapie)</div>
-    <div><a href="index.html">Startseite</a> · <a href="https://psychotherapie-drkastberger.at/">Hauptseite</a> · <a href="https://psychotherapie-drkastberger.at/#impressum">Impressum</a> · <a href="https://psychotherapie-drkastberger.at/#datenschutz">Datenschutz</a></div>
+    <div><a href="https://psychotherapie-drkastberger.at/">Startseite</a> · <a href="index.html">I.B.T. Traumatherapie</a> · <a href="https://psychotherapie-drkastberger.at/#impressum">Impressum</a> · <a href="https://psychotherapie-drkastberger.at/#datenschutz">Datenschutz</a></div>
     <div>Kein Notfall- oder Krisendienst. Bei akuter Gefahr wenden Sie sich an den zuständigen Rettungs- oder Notfalldienst.</div>
   </div>
 </footer>
 <div class="mobile" aria-label="Schneller Kontakt"><a class="btn btn-secondary" href="tel:+4368181671141">Anrufen</a><a class="btn btn-primary" href="mailto:praxis@psychotherapie-drkastberger.at?subject=Anfrage%20Gruppenangebot">Gruppen-Anfrage</a></div>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true"><img src="" alt=""></div>
+  <script>
+  (function(){var lb=document.getElementById("lightbox"),im=lb.querySelector("img");
+  document.querySelectorAll("a[data-lightbox]").forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();var t=a.querySelector("img");im.src=a.getAttribute("href");im.alt=t?t.alt:"";lb.classList.add("open");});});
+  lb.addEventListener("click",function(){lb.classList.remove("open");im.src="";});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"){lb.classList.remove("open");im.src="";}});
+  })();
+  </script>
 </body>
 </html>
