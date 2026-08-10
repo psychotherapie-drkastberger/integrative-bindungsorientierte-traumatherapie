@@ -37,7 +37,7 @@
     .method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}.method-card{padding:1.45rem;border:1px solid rgba(255,255,255,.15);border-radius:var(--radius);background:rgba(255,255,255,.08)}.method-num{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--peach);color:var(--clay2);font-weight:900;margin-bottom:.9rem}
     .facts{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2rem}.fact-card{padding:1.4rem;border-radius:var(--radius);background:#fff;border:1px solid rgba(24,63,58,.13)}.fact-card p{color:var(--muted);margin:.2rem 0}.fact-card strong{color:var(--forest)}
     .dates{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}.date-card{padding:1.4rem;border-radius:var(--radius);background:#fff;border:1px solid rgba(24,63,58,.13);display:flex;flex-direction:column;gap:.7rem}.date-card .when{font-family:Georgia,serif;color:var(--forest);font-size:1.15rem}.date-card .where{color:var(--muted);font-size:.9rem}.date-card .btn{margin-top:auto}
-    .section-thumb{display:block;width:min(320px,80%);margin:1.2rem 0 1.4rem;cursor:zoom-in}.section-thumb img{width:100%;height:auto;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid rgba(24,63,58,.12)}.flyer{display:block;max-width:780px;margin:2.2rem auto 0;cursor:zoom-in}.flyer img{width:100%;height:auto;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid rgba(24,63,58,.12)}.zoom-hint{text-align:center;color:var(--muted);font-size:.85rem;margin:.6rem 0 0}.hero-banner{margin-top:2rem;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(24,63,58,.12);aspect-ratio:16/7}.hero-banner img{width:100%;height:100%;object-fit:cover;object-position:center 40%}.lightbox{position:fixed;inset:0;z-index:100;display:none;place-items:center;background:rgba(16,28,25,.88);padding:1.5rem;cursor:zoom-out}.lightbox.open{display:grid}.lightbox img{max-width:min(96vw,1200px);max-height:94vh;width:auto;height:auto;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+    .section-thumb{display:block;width:min(560px,100%);margin:1.2rem 0 1.4rem;cursor:zoom-in}.section-thumb img{width:100%;height:auto;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid rgba(24,63,58,.12)}.flyer{display:block;max-width:780px;margin:2.2rem auto 0;cursor:zoom-in}.flyer img{width:100%;height:auto;border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid rgba(24,63,58,.12)}.zoom-hint{text-align:center;color:var(--muted);font-size:.85rem;margin:.6rem 0 0}.hero-banner{margin-top:2rem;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(24,63,58,.12);background:#fdfbf7}.hero-banner svg{display:block;width:100%;height:auto}.hero-icon{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:var(--sage);margin:1rem 0 .4rem}.lightbox{position:fixed;inset:0;z-index:100;display:none;background:rgba(16,28,25,.88);padding:1.5rem;cursor:zoom-out;overflow:auto}.lightbox.open{display:flex}.lightbox img{margin:auto;max-width:min(96vw,1200px);max-height:94vh;width:auto;height:auto;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
     .leaders{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;margin-top:1.3rem}.leader-card{display:flex;gap:1rem;align-items:center;background:#fff;border:1px solid rgba(24,63,58,.13);border-radius:var(--radius);padding:1.1rem}.leader-card img{width:76px;height:76px;border-radius:50%;object-fit:cover;flex:0 0 auto;border:1px solid rgba(24,63,58,.14)}.leader-card h4{margin:0 0 .15rem;color:var(--forest);font-family:Georgia,"Times New Roman",serif;font-size:1.05rem}.leader-card p{margin:0;color:var(--muted);font-size:.86rem}
     .cta{display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;align-items:center;background:var(--forest);color:#fff;border-radius:32px;padding:clamp(1.5rem,4vw,3rem);box-shadow:var(--shadow)}.cta h2{color:#fff}.cta p{color:#dbe8e3}.contact{padding:1.25rem;border-radius:20px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.17)}.line{display:flex;gap:.7rem;margin:.65rem 0}.line a{color:#fff;font-weight:700}.line span{color:#dbe8e3;font-size:.88rem}
     .divider{border:0;border-top:1px solid var(--line);margin:0}
@@ -93,6 +93,7 @@
   <section class="hero" aria-labelledby="hero-title">
     <div class="wrap">
       <span class="eyebrow">Gruppenangebote · Salzburg</span>
+      <div class="hero-icon" aria-hidden="true"><svg width="36" height="32" viewBox="0 0 36 32"><g fill="#183f3a"><circle cx="18" cy="8" r="5.5"/><path d="M9.5,28 a8.5,8.5 0 0 1 17,0 z"/><g opacity=".72"><circle cx="6.5" cy="11" r="4.3"/><path d="M0,28 a6.8,6.8 0 0 1 13,0 z"/><circle cx="29.5" cy="11" r="4.3"/><path d="M23,28 a6.8,6.8 0 0 1 13,0 z"/></g></g></svg></div>
       <h1 id="hero-title">Psychotherapeutische Gruppen für Beziehung, Eltern und Familie</h1>
       <p class="lead">Neben der Einzeltherapie biete ich – teils gemeinsam mit Kolleg:innen – psychotherapeutisch geleitete Gruppenformate an. Sie richten sich an Erwachsene, die an eigenen Beziehungs- und Erziehungsmustern arbeiten möchten, in einem kleinen, geschützten und vertraulichen Rahmen.</p>
       <div class="hero-actions">
@@ -100,8 +101,31 @@
         <a class="btn btn-secondary" href="#elterngruppe">Eltern sein, ohne alte Muster</a>
       </div>
       <p class="micro">Vor jeder Teilnahme findet ein kurzes persönliches Vorgespräch statt, in dem wir gemeinsam klären, ob das jeweilige Gruppenformat aktuell zu Ihrem Anliegen passt.</p>
-      <div class="hero-banner">
-        <img src="assets/hero-elterngespraech.webp" width="1672" height="941" alt="Symbolbild für psychotherapeutische Gruppen: warmes Gespräch in geschütztem Rahmen – zwei Frauen im Austausch, eine davon mit Baby im Arm.">
+      <div class="hero-banner" role="img" aria-label="Symbolbild: links eine Gruppe von Einzelpersonen im Kreis (Herzwurzeln – Beziehungs-Navi), rechts mehrere Elternpaare gemeinsam (Eltern sein, ohne alte Muster)">
+        <svg viewBox="0 0 1600 620" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs><g id="fig"><circle cx="0" cy="-16" r="11"/><path d="M-16,22 a16,16 0 0 1 32,0 z"/></g></defs>
+          <rect width="1600" height="620" fill="#fdfbf7"/>
+          <circle cx="105" cy="70" r="190" fill="#f2ddd3" opacity=".5"/>
+          <circle cx="1510" cy="570" r="210" fill="#dce8e2" opacity=".55"/>
+          <circle cx="420" cy="285" r="212" fill="#eff5f1"/>
+          <path d="M420 322 c-30,-24 -45,-41 -45,-60 a21.5,21.5 0 0 1 45,-13 a21.5,21.5 0 0 1 45,13 c0,19 -15,36 -45,60 z" fill="#9f4d43" opacity=".92"/>
+          <use href="#fig" transform="translate(420,132) scale(2.1)" fill="#285c53"/>
+          <use href="#fig" transform="translate(553,208) scale(2.1)" fill="#9f4d43"/>
+          <use href="#fig" transform="translate(553,362) scale(2.1)" fill="#c69248"/>
+          <use href="#fig" transform="translate(420,438) scale(2.1)" fill="#285c53"/>
+          <use href="#fig" transform="translate(287,362) scale(2.1)" fill="#7c382f"/>
+          <use href="#fig" transform="translate(287,208) scale(2.1)" fill="#183f3a"/>
+          <text x="420" y="568" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="31" fill="#596965">Herzwurzeln – Einzelpersonen in der Gruppe</text>
+          <circle cx="1180" cy="285" r="212" fill="#f7ece3"/>
+          <use href="#fig" transform="translate(1180,300) scale(1.35)" fill="#c69248"/>
+          <use href="#fig" transform="translate(1154,150) scale(2.1)" fill="#285c53"/>
+          <use href="#fig" transform="translate(1208,150) scale(2.1)" fill="#9f4d43"/>
+          <use href="#fig" transform="translate(1271,357) scale(2.1)" fill="#183f3a"/>
+          <use href="#fig" transform="translate(1325,357) scale(2.1)" fill="#7c382f"/>
+          <use href="#fig" transform="translate(1035,357) scale(2.1)" fill="#9f4d43"/>
+          <use href="#fig" transform="translate(1089,357) scale(2.1)" fill="#285c53"/>
+          <text x="1180" y="568" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="31" fill="#596965">Elterngruppe – Mütter und Väter gemeinsam</text>
+        </svg>
       </div>
     </div>
   </section>
@@ -114,7 +138,7 @@
         <img src="assets/herzwurzeln-flyer-1.webp" width="1200" height="1200" loading="lazy" alt="Herzwurzeln – Ein Wochenende für deine Beziehungsmuster: symbolische Illustration von zwei Menschen auf einem gemeinsamen Weg sowie einer Gruppe in einer Sitzung.">
       </a>
       <h2 id="herzwurzeln-title">Herzwurzeln – Beziehungs-Navi</h2>
-      <p class="intro">Warum wiederholt sich in Beziehungen immer wieder dasselbe? Vielleicht geraten Sie an emotional nicht verfügbare Menschen, investieren viel und bekommen wenig zurück, ziehen sich bei echter Nähe zurück oder halten an Beziehungen fest, obwohl sie nicht guttun. Herzwurzeln ist ein geschütztes Wochenende für genau diese Muster: Das Beziehungs-Navi hilft, wiederkehrende Dynamiken nicht nur mit dem Kopf zu verstehen, sondern im unmittelbaren Erleben wahrzunehmen – als persönliche Selbsterfahrung in einer kleinen, vertrauensvollen Gruppe von maximal 6 Personen. Kein Frontalvortrag, keine Datingtipps.</p>
+      <p class="intro">Warum wiederholt sich in Beziehungen immer wieder dasselbe? Vielleicht geraten Sie an emotional nicht verfügbare Menschen, investieren viel und bekommen wenig zurück, ziehen sich bei echter Nähe zurück oder halten an Beziehungen fest, obwohl sie nicht guttun. Herzwurzeln ist ein geschütztes Wochenende – basierend auf dem Pesso-Ansatz (PBSP) – für genau diese Muster: Das Beziehungs-Navi hilft, wiederkehrende Dynamiken nicht nur mit dem Kopf zu verstehen, sondern im unmittelbaren Erleben wahrzunehmen – als persönliche Selbsterfahrung in einer kleinen, vertrauensvollen Gruppe von maximal 6 Personen. Kein Frontalvortrag, keine Datingtipps.</p>
 
       <a class="flyer" href="assets/herzwurzeln-flyer-2.webp" data-lightbox aria-label="Herzwurzeln-Flyer in Großansicht öffnen">
         <img src="assets/herzwurzeln-flyer-2.webp" width="1055" height="1491" loading="lazy" alt="Herzwurzeln – Beziehungs-Navi: Flyer mit den Fragen „Warum wähle ich immer wieder die Falschen?“, was Sie erwartet und den Eckdaten Dauer, Gruppengröße, Ort und Beitrag.">
@@ -253,10 +277,13 @@
 <div class="mobile" aria-label="Schneller Kontakt"><a class="btn btn-secondary" href="tel:+4368181671141">Anrufen</a><a class="btn btn-primary" href="mailto:praxis@psychotherapie-drkastberger.at?subject=Anfrage%20Gruppenangebot">Gruppen-Anfrage</a></div>
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true"><img src="" alt=""></div>
   <script>
-  (function(){var lb=document.getElementById("lightbox"),im=lb.querySelector("img");
-  document.querySelectorAll("a[data-lightbox]").forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();var t=a.querySelector("img");im.src=a.getAttribute("href");im.alt=t?t.alt:"";lb.classList.add("open");});});
-  lb.addEventListener("click",function(){lb.classList.remove("open");im.src="";});
-  document.addEventListener("keydown",function(e){if(e.key==="Escape"){lb.classList.remove("open");im.src="";}});
+  (function(){var lb=document.getElementById("lightbox"),im=lb.querySelector("img"),scale=1,base=0;
+  function reset(){scale=1;base=0;im.style.maxWidth="";im.style.maxHeight="";im.style.width="";}
+  function close(){lb.classList.remove("open");im.src="";reset();document.body.style.overflow="";}
+  document.querySelectorAll("a[data-lightbox]").forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();reset();var t=a.querySelector("img");im.src=a.getAttribute("href");im.alt=t?t.alt:"";lb.classList.add("open");document.body.style.overflow="hidden";});});
+  lb.addEventListener("click",function(e){if(e.target===im&&scale>1){return;}close();});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"){close();}});
+  lb.addEventListener("wheel",function(e){if(!lb.classList.contains("open"))return;e.preventDefault();if(!base){base=im.clientWidth;}scale=Math.min(6,Math.max(1,scale*(e.deltaY<0?1.15:0.87)));if(scale===1){im.style.maxWidth="";im.style.maxHeight="";im.style.width="";}else{im.style.maxWidth="none";im.style.maxHeight="none";im.style.width=(base*scale)+"px";}},{passive:false});
   })();
   </script>
 </body>
