@@ -34,6 +34,7 @@
     .trust{margin-top:-.8rem;position:relative;z-index:3}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);background:#fff;border:1px solid rgba(24,63,58,.14);border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(24,63,58,.08)}.trust-item{padding:1.15rem 1.3rem;display:flex;gap:.8rem}.trust-item+.trust-item{border-left:1px solid var(--line)}.trust-icon{width:34px;height:34px;flex:0 0 auto;border-radius:50%;display:grid;place-items:center;background:var(--sage2);color:var(--forest);font-weight:900}.trust-item strong{display:block;color:var(--forest)}.trust-item span{font-size:.84rem;color:var(--muted)}
     section{padding:5.1rem 0}.soft{background:var(--sage2)}.dark{background:var(--forest);color:#ecf5f1}.dark h2,.dark h3{color:#fff}.dark p{color:#d7e5e0}
     .problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}.problem-card{background:#fff;border:1px solid rgba(24,63,58,.13);border-radius:var(--radius);padding:1.45rem;box-shadow:0 10px 28px rgba(24,63,58,.055)}.problem-card:first-child{background:linear-gradient(145deg,#fff,var(--peach));grid-column:span 2}.problem-card p{color:var(--muted)}.tag{display:inline-block;margin-bottom:.75rem;padding:.3rem .58rem;border-radius:999px;background:var(--sage);color:var(--forest);font-size:.75rem;font-weight:800}.check{list-style:none;padding:0;margin:1rem 0 0}.check li{position:relative;padding-left:1.8rem;margin:.62rem 0}.check li:before{content:"✓";position:absolute;left:0;top:.06rem;width:1.25rem;height:1.25rem;border-radius:50%;display:grid;place-items:center;background:var(--sage);color:var(--forest);font-size:.7rem;font-weight:900}.note{margin-top:1.2rem;padding:1rem 1.1rem;border-left:4px solid var(--clay);background:rgba(255,255,255,.65);border-radius:0 12px 12px 0;color:#4d403c;font-size:.91rem}
+    .life-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}.life-card{background:#fff;border:1px solid rgba(24,63,58,.13);border-radius:var(--radius);padding:1.45rem;box-shadow:0 10px 28px rgba(24,63,58,.055)}.life-card p{color:var(--muted)}.method-note{margin-top:.9rem;padding-top:.8rem;border-top:1px solid var(--line);color:var(--clay2);font-size:.86rem;font-weight:700}
     .method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}.method-card{padding:1.45rem;border:1px solid rgba(255,255,255,.15);border-radius:var(--radius);background:rgba(255,255,255,.08)}.method-num{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--peach);color:var(--clay2);font-weight:900;margin-bottom:.9rem}
     .image-section{margin-top:2.2rem;border-radius:32px;overflow:hidden;box-shadow:var(--shadow);background:#fff;border:1px solid rgba(24,63,58,.12)}.image-section img{width:100%;aspect-ratio:16/9;object-fit:cover}.image-copy{padding:1.2rem 1.35rem;color:var(--muted);font-size:.92rem}.image-copy strong{color:var(--forest)}
     .phase-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}.phase{position:relative;background:#fff;border:1px solid rgba(24,63,58,.13);border-radius:var(--radius);padding:1.5rem}.phase:before{content:attr(data-phase);display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--clay);color:#fff;font-weight:900;margin-bottom:.9rem}.phase p{color:var(--muted)}.phase.emphasis{outline:3px solid rgba(159,77,67,.16);background:linear-gradient(145deg,#fff,var(--peach))}
@@ -45,8 +46,8 @@
     .faq{display:grid;gap:.75rem;margin-top:2rem}details{background:#fff;border:1px solid rgba(24,63,58,.13);border-radius:16px;overflow:hidden}summary{cursor:pointer;list-style:none;padding:1.1rem 3rem 1.1rem 1.15rem;position:relative;color:var(--forest);font-weight:800}summary::-webkit-details-marker{display:none}summary:after{content:"+";position:absolute;right:1.15rem;top:50%;transform:translateY(-50%);font-size:1.3rem;color:var(--clay)}details[open] summary:after{content:"−"}details p{margin:0;padding:0 1.15rem 1.15rem;color:var(--muted)}
     .cta{display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;align-items:center;background:var(--forest);color:#fff;border-radius:32px;padding:clamp(1.5rem,4vw,3rem);box-shadow:var(--shadow)}.cta h2{color:#fff}.cta p{color:#dbe8e3}.contact{padding:1.25rem;border-radius:20px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.17)}.line{display:flex;gap:.7rem;margin:.65rem 0}.line a{color:#fff;font-weight:700}.line span{color:#dbe8e3;font-size:.88rem}.sources{font-size:.82rem;color:var(--muted)}.sources ul{padding:0 2rem 1.1rem;margin:0}.sources li{margin:.35rem 0}
     footer{padding:2rem 0 6rem;color:var(--muted);font-size:.81rem}.foot{border-top:1px solid var(--line);padding-top:1.3rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}.mobile{display:none}
-    @media(max-width:960px){.links>a:not(.btn){display:none}.hero-grid,.good-to-good,.about,.cta{grid-template-columns:1fr}.hero-visual{max-width:760px}.trust-grid,.method-grid,.phase-grid{grid-template-columns:1fr}.trust-item+.trust-item{border-left:0;border-top:1px solid var(--line)}.problem-grid{grid-template-columns:1fr 1fr}.problem-card:first-child{grid-column:span 2}.bilateral-grid{grid-template-columns:1fr}.ages{grid-template-columns:1fr}.age.baby{grid-row:auto}.evidence{grid-template-columns:1fr}}
-    @media(max-width:650px){body{font-size:17px}section{padding:4rem 0}.brand small{display:none}.nav .btn{font-size:.82rem;padding-inline:.85rem}.hero{padding-top:3.4rem}.hero-grid{grid-template-columns:1fr}.hero-visual{border-radius:25px}.visual-caption{position:static;border-radius:0;background:#fff}.problem-grid{grid-template-columns:1fr}.problem-card:first-child{grid-column:auto}.hero-actions .btn{width:100%}.mobile{position:fixed;display:grid;grid-template-columns:.8fr 1.2fr;gap:.5rem;left:.7rem;right:.7rem;bottom:.7rem;z-index:60;padding:.55rem;border-radius:18px;background:rgba(255,255,255,.96);box-shadow:0 12px 35px rgba(24,63,58,.22);border:1px solid rgba(24,63,58,.14);backdrop-filter:blur(14px)}.mobile .btn{min-height:44px;padding:.55rem .65rem;font-size:.83rem}}
+    @media(max-width:960px){.links>a:not(.btn){display:none}.hero-grid,.good-to-good,.about,.cta{grid-template-columns:1fr}.hero-visual{max-width:760px}.trust-grid,.method-grid,.phase-grid{grid-template-columns:1fr}.trust-item+.trust-item{border-left:0;border-top:1px solid var(--line)}.problem-grid{grid-template-columns:1fr 1fr}.problem-card:first-child{grid-column:span 2}.life-grid{grid-template-columns:1fr 1fr}.bilateral-grid{grid-template-columns:1fr}.ages{grid-template-columns:1fr}.age.baby{grid-row:auto}.evidence{grid-template-columns:1fr}}
+    @media(max-width:650px){body{font-size:17px}section{padding:4rem 0}.brand small{display:none}.nav .btn{font-size:.82rem;padding-inline:.85rem}.hero{padding-top:3.4rem}.hero-grid{grid-template-columns:1fr}.hero-visual{border-radius:25px}.visual-caption{position:static;border-radius:0;background:#fff}.problem-grid{grid-template-columns:1fr}.problem-card:first-child{grid-column:auto}.life-grid{grid-template-columns:1fr}.hero-actions .btn{width:100%}.mobile{position:fixed;display:grid;grid-template-columns:.8fr 1.2fr;gap:.5rem;left:.7rem;right:.7rem;bottom:.7rem;z-index:60;padding:.55rem;border-radius:18px;background:rgba(255,255,255,.96);box-shadow:0 12px 35px rgba(24,63,58,.22);border:1px solid rgba(24,63,58,.14);backdrop-filter:blur(14px)}.mobile .btn{min-height:44px;padding:.55rem .65rem;font-size:.83rem}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
   </style>
 
@@ -116,7 +117,7 @@
       <span>Praxis Dr. Kastberger<small>Psychotherapie · Verhaltenstherapie · Salzburg</small></span>
     </a>
     <nav class="links" aria-label="Hauptnavigation">
-      <a href="#saeuglinge">Säuglinge</a><a href="#phasen">Ablauf</a><a href="#bilateral">Bilaterale Stimulation</a><a href="#faq">FAQ</a>
+      <a href="#anliegen">Anliegen</a><a href="#phasen">Ablauf</a><a href="#bilateral">Bilaterale Stimulation</a><a href="#faq">FAQ</a>
       <a class="btn btn-secondary" href="gruppenangebote.html">Gruppenangebote</a>
       <a class="btn btn-primary" href="mailto:praxis@psychotherapie-drkastberger.at?subject=Anfrage%20S%C3%A4ugling%20oder%20Kleinkind">Erstkontakt</a>
     </nav>
@@ -151,26 +152,64 @@
     </div>
   </div>
 
-  <section id="saeuglinge" aria-labelledby="problem-title">
+  <section id="anliegen" aria-labelledby="problem-title">
     <div class="wrap">
-      <p class="kicker">Könnte Ihr Anliegen hier passen?</p>
-      <h2 id="problem-title">Anzeichen verstehen, ohne vorschnell zu diagnostizieren</h2>
-      <p class="intro">Gerade bei Säuglingen zeigt sich Belastung oft über Körper, Regulation, Schlaf, Füttern und Beziehung. Diese Zeichen bedeuten nicht automatisch ein Trauma. Sie können aber Anlass sein, genauer hinzusehen.</p>
-      <div class="problem-grid">
-        <article class="problem-card">
+      <p class="kicker">Für wen ist mein Angebot?</p>
+      <h2 id="problem-title">Ihr Kind schreit, wütet oder zieht sich zurück? Oder spüren Sie, dass alte Muster wieder da sind?</h2>
+      <p class="intro">Hier finden Sie Hilfe. Ich bin Psychotherapeutin (Verhaltenstherapie) und arbeite mit Kindern, Jugendlichen, Erwachsenen und Paaren. Ich spreche Deutsch, Englisch, Italienisch und Französisch.</p>
+      <div class="life-grid">
+        <article class="life-card">
           <span class="tag">Besonderer Praxisschwerpunkt</span>
-          <h3>Säuglinge & Kleinkinder</h3>
+          <h3>Babys und Kleinkinder (0 bis 3 Jahre)</h3>
           <ul class="check">
-            <li>anhaltendes, schwer beruhigbares oder exzessives Schreien</li>
-            <li>ausgeprägte Schreckhaftigkeit, Unruhe oder Reizempfindlichkeit</li>
-            <li>anhaltende Schlaf-, Still- oder Fütterprobleme</li>
-            <li>starke Trennungsreaktionen oder Schwierigkeiten in der Co-Regulation</li>
-            <li>Belastungen nach schwieriger Geburt, Frühgeburt, Intensivstation oder medizinischen Eingriffen</li>
-            <li>frühe Verluste, Trennungen oder andere stark belastende Erfahrungen</li>
+            <li>Ihr Kind schreit viel, schläft schlecht oder wirkt ständig angespannt.</li>
+            <li>Es hat starke Trennungsängste oder heftige Wutausbrüche.</li>
+            <li>Nach Frühgeburt, Intensivstation oder Operation wirkt es verunsichert.</li>
           </ul>
+          <p class="method-note">Behandlung: Integrative Bindungsorientierte Traumatherapie, I.B.T.®; bei Wutanfällen ab 2 Jahren Eltern-Kind-Interaktionstherapie, PCIT</p>
         </article>
-        <article class="problem-card"><h3>Kinder & Jugendliche</h3><p>Wiederkehrende Ängste, Albträume, Vermeidung, körperliche Stressreaktionen, starke Wut, Rückzug, Konzentrationsprobleme oder belastende Erinnerungen können traumabezogen sein – müssen es aber nicht.</p></article>
-        <article class="problem-card"><h3>Erwachsene</h3><p>Frühe und vorsprachliche Erfahrungen können sich später als hohe Alarmbereitschaft, unerklärliche Körperreaktionen, Scham, Beziehungsschwierigkeiten oder intensive Trigger zeigen.</p></article>
+        <article class="life-card">
+          <h3>Kinder (3 bis 12 Jahre)</h3>
+          <ul class="check">
+            <li>Es hat häufige Wutanfälle, widersetzt sich oder wird schnell aggressiv (Störung des Sozialverhaltens).</li>
+            <li>Es ist impulsiv, unruhig oder konzentriert sich schlecht (ADHS-Symptome).</li>
+            <li>Es will nicht in die Schule gehen oder klagt über Bauchweh (Angststörung).</li>
+            <li>Es hat Ängste oder Zwänge (Zwangsstörung).</li>
+            <li>Es reagiert auf Veränderungen mit heftigen Wutanfällen (Autismus-Spektrum).</li>
+          </ul>
+          <p class="method-note">Behandlung: PCIT bis 7 Jahre, Verhaltenstherapie, Schematherapie mit Einbeziehung der Eltern</p>
+        </article>
+        <article class="life-card">
+          <h3>Jugendliche (12 bis 18 Jahre)</h3>
+          <ul class="check">
+            <li>Ihr Kind zieht sich zurück, reagiert mit starken Gefühlen oder traut sich wenig zu.</li>
+            <li>Es streitet ständig mit Ihnen oder hat Ängste und Zwänge.</li>
+          </ul>
+          <p class="method-note">Behandlung: Schematherapie, Verhaltenstherapie</p>
+        </article>
+        <article class="life-card">
+          <h3>Erwachsene und Senioren (ab 18 Jahre)</h3>
+          <ul class="check">
+            <li>Sie leiden unter Ängsten, Zwängen oder einer Lebenskrise.</li>
+            <li>Alte Beziehungsmuster oder Kindheitserfahrungen belasten Sie.</li>
+          </ul>
+          <p class="method-note">Behandlung: Verhaltenstherapie, Pesso-Boyden-System-Psychomotor-Therapie, PBSP</p>
+        </article>
+        <article class="life-card">
+          <h3>Paare mit Kindern</h3>
+          <ul class="check">
+            <li>Sie streiten über Erziehung, Nähe oder den Alltag.</li>
+            <li>Sie merken, dass Sie Muster aus Ihrer eigenen Kindheit weitergeben.</li>
+          </ul>
+          <p class="method-note">Behandlung: Paartherapie</p>
+        </article>
+        <article class="life-card">
+          <h3>Großeltern</h3>
+          <ul class="check">
+            <li>Sie erleben Konflikte mit Ihrem Enkelkind oder wissen nicht, wie Sie reagieren sollen.</li>
+          </ul>
+          <p class="method-note">Behandlung: PCIT, Anwendung für Großeltern</p>
+        </article>
       </div>
       <div class="note"><strong>Kinderärztliche Abklärung:</strong> Anhaltendes Schreien, deutliche Schlaf- oder Fütterprobleme, Schmerzen, Fieber, Atemprobleme, Trinkschwäche oder Gedeihstörungen sollen ärztlich abgeklärt werden. Psychotherapie ergänzt, ersetzt aber keine medizinische Diagnostik.</div>
     </div>
